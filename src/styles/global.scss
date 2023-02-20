@@ -1,7 +1,9 @@
-$base-color: #C7C7C7;
-$color: rgb(black, 0.88);
+@use 'vars';
 
 body {
-  background-color: $base-color;
-  color: $color;
+  background-color: var(--white);
+  font-family: 'Fredoka One', cursive;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
 }
