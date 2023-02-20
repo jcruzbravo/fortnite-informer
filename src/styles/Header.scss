@@ -1,3 +1,5 @@
+@use 'vars';
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -5,9 +7,31 @@
   padding: 0 24px;
   position: sticky;
   top: 0;
-  background-color: var(--light-grayish-blue);
+  background-color: var(--very-dark-gray);
 }
 
 .navbar img {
   width: 48px;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.navbar ul li a:hover {
+  font-weight: bold;
+  color: white;
 }
