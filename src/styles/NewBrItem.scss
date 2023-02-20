@@ -1,0 +1,25 @@
+.NewBrItem {
+  width: 360px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.NewBrItem img {
+  width: 340px;
+  height: 260px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.new-br-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.new-br-info p:nth-child(3) {
+  padding: 8px;
+  text-align: center;
+}
