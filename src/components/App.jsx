@@ -1,13 +1,10 @@
 import React from "react";
-import '../styles/global.scss';
-import Header from "@components/Header";
+import '@styles/global.scss';
+import Home from "@pages/Home";
 
 const App = () => {
   return (
-    <>
-      <Header/>
-      <h1>Fortnite Informer</h1>
-    </>
+    <Home/>
   );
 };
 
