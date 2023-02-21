@@ -7,6 +7,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "bundle.js",
+    publicPath: "/"
   },
   mode: "development",
   resolve: {
@@ -18,7 +19,7 @@ module.exports = {
       '@hooks': path.resolve(__dirname, 'src/hooks/'),
       '@containers': path.resolve(__dirname, 'src/containers/'),
       '@pages': path.resolve(__dirname, 'src/pages/'),
-
+      '@routes': path.resolve(__dirname, 'src/routes/')
     }
   },
   module: {
