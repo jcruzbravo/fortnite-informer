@@ -8,7 +8,7 @@ const Header = () => {
       <div className="navbar">
         <img src={logo} alt="Logo Fortnite" />
         <ul>
-          <li><a href="">Shop</a></li>
+          <li><a href="./shop">Shop</a></li>
           <li><a href="">Cosmetics</a></li>
           <li><a href="">Map</a></li>
           <li><a href="">Creator code</a></li>
