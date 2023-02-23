@@ -10,7 +10,7 @@ const FeaturedShop = () => {
   const itemsWithBundle = items.filter((item) => item.bundle != null);
   return (
     <section className="items-featured-shop-container">
-      <h2 className="title">Featured Bundle</h2>
+      <h2>Featured Bundle</h2>
       <div className="FeaturedShop">
         {itemsWithBundle.map((item) => (
           <ItemFeaturedShop

@@ -9,7 +9,7 @@ const DailyShop = () => {
   const items = useGetItemsDailyShop(API_URL);
   return (
     <section className="items-daily-shop-container">
-      <h2 className="title">Daily</h2>
+      <h2>Daily</h2>
       <div className="DailyShop">
         {items.map((item) => (
           <ItemDailyShop
