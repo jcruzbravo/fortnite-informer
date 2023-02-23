@@ -16,7 +16,7 @@ const FeaturedShop = () => {
           <ItemFeaturedShop
             key={`is-${item.bundle.name}`}
             item={item}
-            vBuckIcon={item}
+            background={item.newDisplayAsset.materialInstances[0].images.Background}
           />
         ))}
       </div>
