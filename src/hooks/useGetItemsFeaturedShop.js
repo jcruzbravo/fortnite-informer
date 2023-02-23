@@ -10,7 +10,6 @@ const useGetItemsShop = (API_URL) => {
       const data = response.data.data;
       const featured = data.featured;
       const entries = featured.entries;
-      console.log(entries.length)
       setItems(entries);
     };
     loadData();
