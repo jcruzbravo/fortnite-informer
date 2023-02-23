@@ -15,6 +15,7 @@ const DailyShop = () => {
           <ItemDailyShop
             key={`is-${item.items[0].id}`}
             item={item}
+            background={item.newDisplayAsset.materialInstances[0].images.Background}
           />
         ))}
       </div>

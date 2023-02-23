@@ -1,22 +1,27 @@
 import React from "react";
-import ItemDailyShopList from "./ItemDailyShopList";
-import '@styles/ItemDailyShop.scss';
-import vBuck from '@assets/vbuck.png';
+import "@styles/ItemDailyShop.scss";
+import vBuck from "@assets/vbuck.png";
 
-const ItemDailyShop = ({ item }) => {
+const ItemDailyShop = ({ item, background }) => {
   return (
     <div className="ItemDailyShop">
       <div className="item-daily-shop-info">
-        <p><img src={vBuck} alt="Icon VBuck"/>{`Regular Price $${item.regularPrice}`}</p>
-        <p><img src={vBuck} alt="Icon VBuck"/>{`Final Price $${item.finalPrice}`}</p>
-        {item.items.map((item) => (
-          <ItemDailyShopList
-            key={item.id}
-            image={item.images.icon}
-            name={item.name}
-            description={item.description}
-          />
-        ))}
+        <img
+          src={background}
+          alt={item.devName}
+          className="item-daily-shop-img"
+        />
+        <div className="item-daily-shop-content">
+          <p>
+            <img src={vBuck} alt="Icon VBuck" className="vbuck" />
+            {`Regular $${item.regularPrice}`}
+          </p>
+          <p>
+            <img src={vBuck} alt="Icon VBuck" className="vbuck" />
+            {`Final $${item.finalPrice}`}
+          </p>
+        </div>
+          <p className="item-daily-shop-name">{item.devName}</p>
       </div>
     </div>
   );
