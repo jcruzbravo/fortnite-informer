@@ -16,6 +16,7 @@ const WithoutBundle = () => {
           <ItemWithoutBundle 
             key={`is-${item.devName}`}
             item={item}
+            background={item.newDisplayAsset.materialInstances[0].images.Background}
           />
         ))}
       </div>

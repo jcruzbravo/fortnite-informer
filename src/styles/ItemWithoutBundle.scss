@@ -12,13 +12,31 @@
   margin-top: 12px;
 }
 
-.item-without-bundle-info img {
+.vbuck {
   width: 3rem;
   height: 3rem;
 }
 
-.item-without-bundle-info p {
+.item-without-bundle-content {
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+}
+
+.item-without-bundle-content p {
   display: flex;
   gap: 6px;
   align-items: center;
+  justify-content: center;
+}
+
+.item-without-bundle-shop-img {
+  width: 340px;
+  height: 340px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.item-without-bundle-name {
+  padding: 8px;
+  text-align: center;
 }
