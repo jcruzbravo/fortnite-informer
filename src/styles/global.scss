@@ -1,9 +1,15 @@
 @use 'vars';
 
 body {
-  background-color: var(--dark-grayish-blue);
+  background-color: var(--very-dark);
   font-family: 'Fredoka One', cursive;
   font-family: 'Poppins', sans-serif;
   font-family: 'Quicksand', sans-serif;
   margin: 0;
+}
+
+h2 {
+  color: var(--white);
+  text-align: center;
+  font-weight: bold;
 }
