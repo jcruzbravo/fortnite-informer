@@ -12,6 +12,19 @@
   margin-top: 12px;
 }
 
+.vbuck {
+  width: 3rem;
+  height: 3rem;
+}
+
+.item-featured-shop-info p:nth-child(1),
+.item-featured-shop-info p:nth-child(2) {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+
 .item-featured-shop-img {
   width: 340px;
   height: 340px;
