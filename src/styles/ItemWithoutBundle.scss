@@ -1,0 +1,13 @@
+.ItemWithoutBundle {
+  width: 360px;
+  border-radius: 20px;
+  box-shadow: 0 3px 15px rgb(0 0 0 / 50%);
+}
+
+.item-without-bundle-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+}
