@@ -8,3 +8,10 @@
     color: var(--white);
     font-size: 16px;
 }
+
+@media (max-width: 640px){
+    .DailyShop {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 140px);
+    }
+}

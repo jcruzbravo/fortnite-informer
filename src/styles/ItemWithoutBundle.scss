@@ -1,5 +1,8 @@
+@use 'vars';
+
 .ItemWithoutBundle {
   width: 360px;
+  background-color: var(--very-dark-desaturated-blue);
   border-radius: 20px;
   box-shadow: 0 3px 15px rgb(0 0 0 / 50%);
 }
@@ -39,4 +42,34 @@
 .item-without-bundle-name {
   padding: 8px;
   text-align: center;
+}
+
+@media (max-width: 640px){
+  .ItemWithoutBundle {
+    width: 140px;
+  }
+
+  .item-without-bundle-shop-img {
+    width: 130px;
+    height: 130px;
+  }
+
+  .item-without-bundle-content {
+    display: grid;
+    grid-template-columns: repeat(1, 140px);
+    font-size: 14px;
+  }
+
+  .item-without-bundle-name {
+    font-size: 14px;
+  }
+
+  .item-without-bundle-content p {
+    gap: 0;
+  }
+
+  .vbuck {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
 }

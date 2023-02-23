@@ -1,5 +1,8 @@
+@use 'vars';
+
 .ItemDailyShop {
   width: 360px;
+  background: var(--very-dark-desaturated-blue);
   border-radius: 20px;
   box-shadow: 0 3px 15px rgb(0 0 0 / 50%);
 }
@@ -40,4 +43,31 @@
 .item-daily-shop-name {
   padding: 8px;
   text-align: center;
+}
+
+@media (max-width: 640px){
+  .ItemDailyShop {
+    width: 140px;
+  }
+
+  .item-daily-shop-img {
+    width: 130px;
+    height: 130px;
+  }
+
+  .item-daily-shop-content {
+    display: grid;
+    grid-template-columns: repeat(1, 140px);
+    font-size: 14px;
+  }
+
+  .item-daily-shop-name {
+    font-size: 14px
+  }
+
+  .item-daily-shop-content p:nth-child(3),
+  .item-daily-shop-content p:nth-child(4){
+    text-align: center;
+  }
+
 }

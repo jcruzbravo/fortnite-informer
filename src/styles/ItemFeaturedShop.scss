@@ -1,5 +1,8 @@
+@use 'vars';
+
 .ItemFeaturedShop {
   width: 360px;
+  background: var(--very-dark-desaturated-blue);
   border-radius: 20px;
   box-shadow: 0 3px 15px rgb(0 0 0 / 50%);
 }
@@ -35,5 +38,31 @@
   height: 340px;
   border-radius: 20px;
   object-fit: cover;
+}
+
+@media (max-width: 640px){
+  .ItemFeaturedShop {
+    width: 140px;
+  }
+
+  .item-featured-shop-img {
+    width: 130px;
+    height: 130px;
+  }
+
+  .item-featured-shop-content {
+    display: grid;
+    grid-template-columns: repeat(1, 140px);
+    font-size: 14px;
+  }
+
+  .item-featured-shop-content p {
+    gap: 0;
+  }
+
+  .item-featured-shop-content p:nth-child(3),
+  .item-featured-shop-content p:nth-child(4){
+    text-align: center;
+  }
 }
 
