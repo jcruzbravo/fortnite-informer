@@ -1,0 +1,15 @@
+@use 'vars';
+
+.DailyShop {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 340px);
+    gap: 30px;
+    place-content: center;
+    color: var(--white);
+    font-size: 16px;
+}
+
+.title {
+  text-align: center;
+  font-weight: bold;
+}
