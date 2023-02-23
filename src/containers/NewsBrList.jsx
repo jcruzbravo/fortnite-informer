@@ -1,5 +1,5 @@
 import React from 'react';
-import NewBrItem from '@components/NewBrItem';
+import NewBrItem from '@components/News/NewBrItem';
 import useGetBrNews from '@hooks/useGetBrNews';
 import '@styles/NewsBrList.scss'
 

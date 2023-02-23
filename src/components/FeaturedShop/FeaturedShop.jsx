@@ -1,5 +1,5 @@
 import React from "react";
-import ItemFeaturedShop from "@components/ItemFeaturedShop";
+import ItemFeaturedShop from "./ItemFeaturedShop";
 import useGetItemsFeaturedShop from "@hooks/useGetItemsFeaturedShop";
 import '@styles/FeaturedShop.scss'
 

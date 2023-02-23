@@ -1,5 +1,5 @@
 import React from 'react';
-import NewSwItem from '@components/NewSwItem';
+import NewSwItem from '@components/News/NewSwItem';
 import useGetSwNews from '@hooks/useGetSwNews';
 import '@styles/NewsSwList.scss'
 
