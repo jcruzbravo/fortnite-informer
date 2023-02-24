@@ -1,10 +1,10 @@
-.NewsBrList {
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-  justify-content: center;
-  align-items: center;
-  margin-top: 18px;
+.news-br-container{
   margin-bottom: 18px;
-  color: var(--white);
+}
+
+.NewsBrList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 360px);
+  gap: 30px;
+  place-content: center;
 }

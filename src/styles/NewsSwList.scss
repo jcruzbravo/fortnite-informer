@@ -1,10 +1,10 @@
-.NewsSwList {
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-  justify-content: center;
-  align-items: center;
-  margin-top: 18px;
+.news-sw-container {
   margin-bottom: 18px;
-  color: var(--white);
+}
+
+.NewsSwList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 460px);
+  gap: 30px;
+  place-content: center;
 }
