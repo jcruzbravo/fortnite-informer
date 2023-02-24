@@ -7,12 +7,13 @@ const API_URL = "https://fortnite-api.com/v2/shop/br/combined";
 
 const WithoutBundle = () => {
   const items = useGetItemsFeaturedShop(API_URL);
-  const itemsWithoutBundle = items.filter((item) => item.bundle == null);
+  const itemsWithAssetWithoutBundle = items.filter((item) => item.newDisplayAsset != null && item.bundle == null);
+
   return (
     <section className='items-without-bundle-container'>
       <h2>Featured Without Bundle</h2>
       <div className='WithoutBundle'>
-        {itemsWithoutBundle.map((item) => (
+        {itemsWithAssetWithoutBundle.map((item) => (
           <ItemWithoutBundle 
             key={`is-${item.devName}`}
             item={item}
