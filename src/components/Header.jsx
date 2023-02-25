@@ -9,8 +9,8 @@ const Header = () => {
         <a href="/"><img src={logo} alt="Logo Fortnite" /></a>
         <ul>
           <li><a href="./shop">Shop</a></li>
-          <li><a href="">Cosmetics</a></li>
-          <li><a href="">Map</a></li>
+          {/* <li><a href="">Cosmetics</a></li> */}
+          <li><a href="./map">Map</a></li>
           <li><a href="">Creator code</a></li>
           {/* <li>Search</li> */}
         </ul>
