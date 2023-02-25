@@ -1,0 +1,14 @@
+.Map {
+  display: flex;
+  justify-content: center;
+  margin: 12px;
+}
+
+.map-container {
+  width: 800px;
+}
+
+.map-container img {
+  max-width: 100%;
+  height: auto;
+}
