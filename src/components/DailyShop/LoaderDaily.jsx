@@ -2,11 +2,11 @@ import React from "react";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 
-const LoaderFeatured = ({item}) => {
+const LoaderDaily = ({ item }) => {
   return (
-    <div className="ItemFeaturedShop">
-      <div className="item-featured-shop-info">
-        <div className="item-featured-shop-img">
+    <div className="ItemDailyShop">
+      <div className="item-daily-shop-info">
+        <div className="item-daily-shop-img">
           <Skeleton
             count={1}
             height={340}
@@ -16,7 +16,7 @@ const LoaderFeatured = ({item}) => {
           />
         </div>
       </div>
-      <div className="item-featured-shop-info">
+      <div className="item-daily-shop-info">
         <p style={{ width: 320, textAlign: "center" }}>
           <Skeleton
             count={2}
@@ -31,4 +31,4 @@ const LoaderFeatured = ({item}) => {
   );
 };
 
-export default LoaderFeatured;
+export default LoaderDaily;
