@@ -8,6 +8,7 @@ const API_URL = "https://fortnite-api.com/v2/shop/br/combined";
 
 const DailyShop = () => {
   const items = useGetItemsDailyShop(API_URL);
+  const itemsWithAssetWithoutBundle = items.filter((item) => item.newDisplayAsset != null)
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -21,7 +22,7 @@ const DailyShop = () => {
       <section className="items-daily-shop-container">
       <h2>Daily</h2>
       <div className="DailyShop">
-        {items.map((item) => (
+        {itemsWithAssetWithoutBundle.map((item) => (
           <LoaderDaily
             key={`is-${item.items[0].id}`}
             item={item}
@@ -35,7 +36,7 @@ const DailyShop = () => {
       <section className="items-daily-shop-container">
         <h2>Daily</h2>
         <div className="DailyShop">
-          {items.map((item) => (
+          {itemsWithAssetWithoutBundle.map((item) => (
             <ItemDailyShop
               key={`is-${item.items[0].id}`}
               item={item}
