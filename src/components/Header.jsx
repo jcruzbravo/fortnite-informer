@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <nav>
       <div className="navbar">
-        <Link>
+        <Link to="/">
           <img src={logo} alt="Logo Fortnite" />
         </Link>
         <ul>
