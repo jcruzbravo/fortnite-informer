@@ -11,7 +11,7 @@ const useHandleScroll = (divReference) => {
       console.log(height)
       console.log(width)
       console.log(yPositive)
-      const isLoaded = yPositive >= (height/2) ? true : false;
+      const isLoaded = yPositive >= 700 ? true : false;
       setLoaded(isLoaded);
     };
 
