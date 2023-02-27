@@ -2,24 +2,24 @@ const path = require('path');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
+/** @type {import('webpack').Configuration} */
 module.exports = {
   entry: "./src/index.js",
   output: {
-    path: path.resolve(__dirname, "dist"),
+    path: path.resolve(__dirname, "../dist"),
     filename: "bundle.js",
-    publicPath: "./"
+    publicPath: "/"
   },
-  mode: "development",
   resolve: {
     extensions: [".js", ".jsx"],
     alias: {
-      '@components': path.resolve(__dirname, 'src/components/'),
-      '@styles': path.resolve(__dirname, 'src/styles/'),
-      '@assets': path.resolve(__dirname, 'src/assets/'),
-      '@hooks': path.resolve(__dirname, 'src/hooks/'),
-      '@containers': path.resolve(__dirname, 'src/containers/'),
-      '@pages': path.resolve(__dirname, 'src/pages/'),
-      '@routes': path.resolve(__dirname, 'src/routes/')
+      '@components': path.resolve(__dirname, '../src/components/'),
+      '@styles': path.resolve(__dirname, '../src/styles/'),
+      '@assets': path.resolve(__dirname, '../src/assets/'),
+      '@hooks': path.resolve(__dirname, '../src/hooks/'),
+      '@containers': path.resolve(__dirname, '../src/containers/'),
+      '@pages': path.resolve(__dirname, '../src/pages/'),
+      '@routes': path.resolve(__dirname, '../src/routes/')
     }
   },
   module: {
@@ -40,10 +40,6 @@ module.exports = {
         ],
       },
       {
-        test: /\.(css|scss)$/,
-        use: ["style-loader", "css-loader", "sass-loader"],
-      },
-      {
         test: /\.(png|svg|jpg|gif|jpeg)$/,
         type: 'asset'
       }
@@ -58,12 +54,4 @@ module.exports = {
       filename: "[name].css",
     }),
   ], 
-  devServer: {
-    static: {
-      directory: path.join(__dirname, "dist"),
-    },
-    compress: true,
-    port: 3000,
-    historyApiFallback: true
-  },
 }
