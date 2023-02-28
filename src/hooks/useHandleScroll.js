@@ -8,9 +8,6 @@ const useHandleScroll = (divReference) => {
       const div = divReference.current;
       const { y, height, width } = div.getBoundingClientRect();
       const yPositive = (y*(-1));
-      console.log(height)
-      console.log(width)
-      console.log(yPositive)
       const isLoaded = yPositive >= 700 ? true : false;
       setLoaded(isLoaded);
     };
