@@ -8,9 +8,7 @@ const Layout = () => {
     <>
       <nav>
         <div className="navbar">
-          <Link to="/">
-            <img src={logo} alt="Logo Fortnite" />
-          </Link>
+          <img src={logo} alt="Logo Fortnite" />
           <ul>
             <li>
               <Link to="/">Home</Link>
