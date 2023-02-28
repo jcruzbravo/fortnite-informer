@@ -12,7 +12,10 @@ const Layout = () => {
             <img src={logo} alt="Logo Fortnite" />
           </Link>
           <ul>
-          <li>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
               <Link to="/news">News</Link>
             </li>
             <li>
