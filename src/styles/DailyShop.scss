@@ -2,8 +2,10 @@
 
 .DailyShop {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 340px);
+    grid-template-columns: repeat(auto-fill, 360px);
     gap: 30px;
+    padding: 6px;
+    margin: 6px;
     place-content: center;
 }
 
