@@ -6,7 +6,7 @@ import LoaderNewsBr from "@components/News/LoaderNewsBr";
 
 const API = "https://fortnite-api.com/v2/news";
 
-const NewsBrList = () => {
+const News = () => {
   
   const noticias = useGetBrNews(API);
   const [loading, setLoading] = useState(true);
@@ -42,4 +42,4 @@ const NewsBrList = () => {
   }
 };
 
-export default NewsBrList;
+export default News;
