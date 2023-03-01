@@ -1,0 +1,34 @@
+@use "vars";
+
+.MenuMobile {
+  background-color: var(--dark-grayish-blue);
+  width: 100%;
+  padding: 24px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  transition: 1s ease;
+  animation: moveRight 1s ease forwards;
+  z-index: 1;
+}
+
+.menu-mobile-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-mobile-container a {
+  text-decoration: none;
+  color: var(--white);
+  font-weight: bold;
+}
+
+@keyframes moveRight {
+  from {
+    transform: translateX(-100px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
