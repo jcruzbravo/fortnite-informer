@@ -1,3 +1,34 @@
-.Home {
-  margin: 12px;
+@use 'vars';
+
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../assets/hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(60%);
+}
+
+.hero-content {
+  position: relative;
+  max-width: 1200px;
+  color: var(--white);
+}
+
+.hero-description {
+  margin: 8px;
+  padding: 8px;
+  max-width: 660px;
 }
