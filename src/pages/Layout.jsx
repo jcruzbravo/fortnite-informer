@@ -1,14 +1,27 @@
-import React from "react";
-import "@styles/Header.scss";
+import React, { useState } from "react";
+import { FaBars } from 'react-icons/fa';
+import "@styles/Layout.scss";
 import logo from "@assets/logo.png";
 import { Link, Outlet } from "react-router-dom";
+import MenuMobile from "@containers/MenuMobile";
 
 const Layout = () => {
+  const [showMenu, setShowMenu] = useState(false);
+  const handleMenuClick = () => {
+    setShowMenu(!showMenu);
+  };
+
   return (
     <>
       <nav>
-        <div className="navbar">
+        <div className="menu-mobile-icon" onClick={() => handleMenuClick()}>
+          <FaBars />
+        </div>
+        {showMenu && <MenuMobile/>}
+        <div className="navbar-left">
           <img src={logo} alt="Logo Fortnite" />
+        </div>
+        <div className="navbar-right">
           <ul>
             <li>
               <Link to="/">Home</Link>
@@ -24,6 +37,7 @@ const Layout = () => {
             </li>
           </ul>
         </div>
+        
       </nav>
       <Outlet />
     </>
