@@ -7,9 +7,11 @@ import Shop from "@containers/Shop";
 import Map from "@containers/Map";
 import NotFound from "@pages/NotFound";
 import News from "@containers/News";
+import Footer from "@components/Footer";
 
 const App = () => {
   return (
+    <>
       <Routes>
         <Route path="/" element={<Layout/>}>
           <Route path="/" element={<Home/>}/>
@@ -19,6 +21,8 @@ const App = () => {
           <Route path="*" element={<NotFound/>}/>
         </Route>
       </Routes>
+      <Footer/>
+    </>
   );
 };
 
