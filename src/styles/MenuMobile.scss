@@ -9,7 +9,6 @@
   top: 60px;
   left: 0;
   transition: 1s ease;
-  animation: moveRight 1s ease forwards;
   z-index: 1;
 }
 
@@ -24,11 +23,7 @@
   font-weight: bold;
 }
 
-@keyframes moveRight {
-  from {
-    transform: translateX(-100px);
-  }
-  to {
-    transform: translateY(0);
-  }
+.menu-mobile-container a:hover {
+  font-weight: bold;
+  color: var(--very-dark-blue);
 }

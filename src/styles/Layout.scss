@@ -18,8 +18,8 @@ nav {
   width: 48px;
 }
 
-.navbar-left ul,
-.navbar-right ul {
+.navbar-left > ul,
+.navbar-right > ul {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -28,7 +28,7 @@ nav {
   height: 60px;
 }
 
-.navbar-right ul li a {
+.navbar-right > ul li a {
   text-decoration: none;
   color: white;
   font-size: 18px;
@@ -36,9 +36,9 @@ nav {
   border-radius: 8px;
 }
 
-.navbar ul li a:hover {
+.navbar-right > ul li a:hover {
   font-weight: bold;
-  color: white;
+  color: var(--light-gray);
 }
 
 @media (max-width: 640px) {
