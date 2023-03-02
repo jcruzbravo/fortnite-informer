@@ -43,33 +43,3 @@
   padding: 8px;
   text-align: center;
 }
-
-@media (max-width: 640px){
-  .ItemWithoutBundle {
-    width: 140px;
-  }
-
-  .item-without-bundle-shop-img {
-    width: 130px;
-    height: 130px;
-  }
-
-  .item-without-bundle-content {
-    display: grid;
-    grid-template-columns: repeat(1, 140px);
-    font-size: 14px;
-  }
-
-  .item-without-bundle-name {
-    font-size: 14px;
-  }
-
-  .item-without-bundle-content p {
-    gap: 0;
-  }
-
-  .vbuck {
-    width: 1.5rem;
-    height: 1.5rem;
-  }
-}
