@@ -5,6 +5,9 @@ const common = require("./webpack.common");
 /** @type {import('webpack').Configuration} */
 const prodConfig = {
   mode: "production",
+  output: {
+    publicPath:"./"
+  },
   plugins: [new MiniCssExtractPlugin()],
   module: {
     rules: [
