@@ -1,0 +1,31 @@
+@use 'vars';
+
+.ShopMenu {
+  background-color: var(--dark-grayish-blue);
+  width: 200px;
+  height: auto;
+  border-radius: 6px;
+  padding: 8px;
+  position: absolute;
+  top: 60px;
+  right: 30px;
+  transition: 1s ease;
+  z-index: 1;
+}
+
+.shop-menu-container ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.shop-menu-container a {
+  text-decoration: none;
+  color: var(--white);
+  font-weight: bold;
+}
+
+.shop-menu-container a:hover {
+  font-weight: bold;
+  color: var(--very-dark-blue);
+}
